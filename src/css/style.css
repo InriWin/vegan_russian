@@ -1,0 +1,57 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  background-color: #009062; }
+
+.container {
+  position: relative;
+  padding-top: 69px;
+  max-width: 1080px;
+  margin: 0 auto; }
+
+.promo__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+.promo__header {
+  margin: 0;
+  font-weight: 800;
+  font-size: 96px;
+  line-height: 81%;
+  color: #fff; }
+.promo__subheader {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 105%;
+  color: #fff; }
+.promo__descr {
+  margin-top: 8px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 105%;
+  color: #7fd0b6; }
+.promo__img {
+  margin-right: 125px; }
+.promo__line-1 {
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  top: 205px;
+  right: 140px; }
+.promo__line-2 {
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  top: 100px;
+  right: 100px; }
+
+/*# sourceMappingURL=style.css.map */
