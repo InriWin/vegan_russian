@@ -1,0 +1,32 @@
+.button {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    &__link {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        border-radius: 38px;
+        border: none;
+        padding: 10px 30px;
+        width: 535px;
+        height: 53px;
+        background-color: #017d55;
+        img {
+            align-self: center;
+            background-color: transparent;
+            width: 25px;
+            height: 25px;
+            margin-right: 12px;
+        }
+        a {
+            font-weight: 700;
+            font-size: 24px;
+            text-align: center;
+            color: $main-color;
+            background-color: #017d55;
+            text-decoration: none;
+            
+        }
+    }
+}

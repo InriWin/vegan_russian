@@ -1,0 +1,17 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 48px 0 16px 0;
+    &__title {
+        text-align: center;
+        margin: 0 18px;
+        font-weight: 700;
+        font-size: 36px;
+        color: $main-color;
+    }
+    &__pattern {
+        align-self: center;
+        height: fit-content;
+    }
+}

@@ -1,0 +1,14 @@
+.sale {
+    .showMore {
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        color: $second-color;
+    }
+    .hiddenButtons {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+}

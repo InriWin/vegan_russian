@@ -1,0 +1,25 @@
+@import 'base/variables';
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    background-color: #009062;
+}
+.container {
+    position: relative;
+    padding-top: 69px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+@import 'blocks/button';
+@import 'blocks/header';
+@import 'blocks/description';
+@import 'blocks/promo';
+@import 'blocks/sale';
+@import 'blocks/booklet';
+
+
+
+
+
+
