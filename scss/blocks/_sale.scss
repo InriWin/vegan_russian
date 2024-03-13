@@ -1,14 +1,22 @@
 .sale {
-    .showMore {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    &__visible {
+        position: relative;
         margin-top: 20px;
         font-weight: 600;
         font-size: 20px;
         text-align: center;
         color: $second-color;
-    }
-    .hiddenButtons {
-        flex-direction: column;
-        display: flex;
-        align-items: center;
+        :after {
+            display: block;
+            position: absolute;
+            content: '';
+            width: 11px; 
+            height: 6px; 
+            background: url('../../icons/show_more.svg') center center/cover no-repeat;
+        }
     }
 }

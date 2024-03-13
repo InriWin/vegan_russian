@@ -11,19 +11,20 @@
     margin: 0 auto;
 }
 
+.container__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
 .container--small {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	max-width: 535px;
 	justify-content: center;
-}
-
-body {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	
 }
 
 @import 'blocks/button';
