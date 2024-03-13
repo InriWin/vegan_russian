@@ -1,0 +1,33 @@
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 48px 0 16px 0;
+    &__pattern {
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+        color: $main-color;
+        &:before {
+            display: block;
+            position: absolute;
+            content: '';
+            width: 73px; 
+            height: 19px; 
+            background: url('../../img/pattern.png') center center/cover no-repeat;
+            left: -18px;
+            transform: translate(-100%, 80%); 
+        }
+        &:after {
+            display: block;
+            position: absolute;
+            content: '';
+            width: 73px; 
+            height: 19px; 
+            right: -18px;
+            background: url('../../img/pattern.png') center center/cover no-repeat;
+            transform: translate(100%, 80%) rotate(0.5turn); 
+        }
+    }
+}
+
