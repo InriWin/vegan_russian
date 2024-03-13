@@ -14,6 +14,10 @@
     background-color: #017d55;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.5s all;
+    &:hover{
+        filter: brightness(0.9);
+    }
     &__link {
         display: flex;
         justify-content: center;
