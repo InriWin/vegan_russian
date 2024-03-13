@@ -11,13 +11,6 @@
     margin: 0 auto;
 }
 
-.container__wrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
-}
 .container--small {
 	display: flex;
 	align-items: center;
@@ -33,6 +26,7 @@
 @import 'blocks/promo';
 @import 'blocks/sale';
 @import 'blocks/booklet';
+@import 'blocks/communication';
 
 
 

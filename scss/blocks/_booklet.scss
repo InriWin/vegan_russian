@@ -1,14 +1,14 @@
 .booklet {
-    flex-direction: column;
     display: flex;
-    align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
     &__img {
         margin-top: 20px;
         display: flex;
         justify-content: center;
         object-fit: cover;
         border-radius: 30px;
-        width: 535px;
         height: 184px;
     }
 }
