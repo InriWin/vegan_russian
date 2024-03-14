@@ -17,7 +17,10 @@
 	flex-direction: column;
 	max-width: 535px;
 	justify-content: center;
-	
+}
+
+body {
+margin-bottom: 150px;
 }
 
 @import 'blocks/button';

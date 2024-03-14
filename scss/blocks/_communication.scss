@@ -3,4 +3,14 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	&__link {
+		margin-top: 24px;
+	}
+	&__title {
+		margin-bottom: 0;
+	}
+	&__description {
+		margin-top: 0;
+	}
+	
 }

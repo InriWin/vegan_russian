@@ -5,11 +5,11 @@
         align-items: center;
     }
     &__header {
-        margin: 0;
         font-weight: 800;
         font-size: 96px;
         line-height: 81%;
-        color: $main-color
+        color: $main-color;
+        margin: 0;
     }
     &__subheader {
         margin-top: 16px;
@@ -27,14 +27,28 @@
     }
     &__img {
         margin-right: 125px;
+        &:before {
+            display: block;
+            position: absolute;
+            content: '';
+            width: 290px; 
+            height: 215px; 
+            background: url('../../img/line_1.png') center center/cover no-repeat;
+            right: 25px;
+            transform: translate(-45%, 65%); 
+        }
+        &:after {
+            display: block;
+            position: absolute;
+            content: '';
+            width: 120px; 
+            height: 122px; 
+            background: url('../../img/line_2.png') center center/cover no-repeat;
+            top: 75px;
+            transform: translate(160%, 25%); 
+        }
     }
-    &__line-1 {
-        display: block;
-        position: absolute;
-        background-color: transparent;
-        top: 205px;
-        right: 140px;
-    }
+    
     &__line-2 {
         display: block;
         position: absolute;
