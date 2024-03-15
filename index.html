@@ -53,8 +53,8 @@
 				</a>
 			</div>
 
-			<div class="sale__visible">Где ещё?</div>
-			<div class="sale__items--hidden">
+			<div class="sale__visible" data-show-all-btn>Где ещё?</div>
+			<div class="sale__items--hidden" data-hidden-items>
 				<a href="#" class="button button__link"> 
 					<img src="icons/google_play.svg" alt="google_play">
 					Google Play
@@ -151,6 +151,24 @@
 			</div>
 		</div>	
 	</div>
+
+    <script>
+        const toggleBtn = document.querySelector('[data-show-all-btn]');
+        const hiddenItems = document.querySelector('[data-hidden-items]');
+
+        toggleBtn.addEventListener("click", toggleItems);
+
+        function toggleItems() {
+            toggleBtn.classList.toggle('active');
+            hiddenItems.classList.toggle('sale__items--hidden');
+        }
+    </script>
+
+    <style>
+        .sale__items--hidden {
+            display: none;
+        }
+    </style>
 	
 </body>
 
