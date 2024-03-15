@@ -19,7 +19,6 @@
         color: $main-color;
     }
     &__descr {
-        margin-top: 8px;
         font-weight: 400;
         font-style: italic;
         font-size: 20px;
@@ -48,12 +47,5 @@
             transform: translate(160%, 25%); 
         }
     }
-    
-    &__line-2 {
-        display: block;
-        position: absolute;
-        background-color: transparent;
-        top: 100px;
-        right: 100px;
-    }
+
 }

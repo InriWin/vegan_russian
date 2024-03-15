@@ -2,7 +2,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
-    background-color: #009062;
+   
 }
 .container {
     position: relative;
@@ -21,6 +21,7 @@
 
 body {
 margin-bottom: 150px;
+background-color: #009062;
 }
 
 @import 'blocks/button';
@@ -30,6 +31,7 @@ margin-bottom: 150px;
 @import 'blocks/sale';
 @import 'blocks/booklet';
 @import 'blocks/communication';
+
 
 
 
