@@ -53,8 +53,8 @@
 				</a>
 			</div>
 
-			<div class="sale__visible" data-show-all-btn>Где ещё?</div>
-			<div class="sale__items--hidden" data-hidden-items>
+			<div class="sale__visible sale__visible--active" data-show-all-btn>Где ещё?</div>
+			<div class="sale__items sale__items--hidden" data-hidden-items>
 				<a href="#" class="button button__link"> 
 					<img src="icons/google_play.svg" alt="google_play">
 					Google Play
@@ -147,30 +147,13 @@
 				<a href="mailto:tatiana.leonova.work@gmail.com" class="button button__link communication__link"> 
 					<img src="icons/email.svg" alt="email">
 					Написать
-					
 				</a>
 			</div>
 		</div>	
 	</div>
 
-    <script>
-        const toggleBtn = document.querySelector('[data-show-all-btn]');
-        const hiddenItems = document.querySelector('[data-hidden-items]');
+	<script src="style.js/toggle.js"></script>
 
-        toggleBtn.addEventListener("click", toggleItems);
-
-        function toggleItems() {
-            toggleBtn.classList.toggle('active');
-            hiddenItems.classList.toggle('sale__items--hidden');
-        }
-    </script>
-
-    <style>
-        .sale__items--hidden {
-            display: none;
-        }
-    </style>
-	
 </body>
 
 </html>
