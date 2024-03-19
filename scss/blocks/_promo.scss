@@ -1,18 +1,20 @@
 .promo {
+    position: relative;
     &__wrapper {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        gap: 150px;
     }
     &__header {
-        margin: 0;
         font-weight: 800;
         font-size: 96px;
         line-height: 81%;
-        color: $main-color
+        color: $main-color;
+        margin: 0;
     }
     &__subheader {
         margin-top: 16px;
+        margin-bottom: 0;
         font-weight: 400;
         font-size: 32px;
         line-height: 105%;
@@ -25,21 +27,37 @@
         font-size: 20px;
         color: $second-color;
     }
-    &__img {
-        margin-right: 125px;
+    &__img-wrapper {
+        top: 32px;
+        right: 150px;
+        border-radius: 27px;
+        width: 210px;
+        height: 299px;
+        rotate: -18deg;
+        &:before {
+            display: block;
+            position: absolute;
+            content: '';
+            rotate: 18deg;
+            width: 290px; 
+            height: 215px; 
+            background: url('../../img/line_1.png') center center/cover no-repeat;
+            right: -25px;
+            top: 147px;
+            transform: translate(-15%, -17%); 
+        }
+        &:after {
+            display: block;
+            position: absolute;
+            content: '';
+            rotate: 18deg;
+            width: 120px; 
+            height: 122px; 
+            background: url('../../img/line_2.png') center center/cover no-repeat;
+            top: 42px;
+            left: 190px;
+            transform: translate(-15%, 15%); 
+        }
     }
-    &__line-1 {
-        display: block;
-        position: absolute;
-        background-color: transparent;
-        top: 205px;
-        right: 140px;
-    }
-    &__line-2 {
-        display: block;
-        position: absolute;
-        background-color: transparent;
-        top: 100px;
-        right: 100px;
-    }
+    
 }

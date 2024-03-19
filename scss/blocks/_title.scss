@@ -1,0 +1,35 @@
+.title {
+	position: relative;
+	&__pattern {
+		text-align: center;
+		margin: 45px 0 36px 0;
+		line-height: 105%;
+		font-weight: 700;
+		font-size: 36px;
+		color: $main-color;
+		&:before {
+			display: block;
+			position: absolute;
+			content: "";
+			width: 73px;
+			height: 19px;
+			background: url(../../img/pattern.png) center center / cover no-repeat;
+			left: -18px;
+			-webkit-transform: translate(-100%, 80%);
+			transform: translate(-100%, -50%);
+			top: 50%;
+		}
+
+		&:after {
+			display: block;
+			position: absolute;
+			content: '';
+			width: 73px; 
+			height: 19px; 
+			right: -18px;
+			top: 50%;
+			background: url('../../img/pattern.png') center center/cover no-repeat;
+			transform: translate(100%, -50%) rotate(0.5turn); 
+		}
+	}
+}

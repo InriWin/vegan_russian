@@ -1,13 +1,17 @@
 .description {
     margin-top: 36px;
-    width: 535px;
     overflow-wrap: break-word;
     font-weight: 400;
     font-size: 24px;
     line-height: 120%;
     color: $main-color;
+    a {
+        text-decoration: none;
+        color: $main-color;
+    }
     &__text {
-        width: 535px;
+        width: 100%;
+        text-align: left;
         margin-top: 8px;
         font-style: italic;
         font-weight: 400;

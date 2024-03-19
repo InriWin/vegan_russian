@@ -1,14 +1,36 @@
 .sale {
-    .showMore {
-        margin-top: 20px;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    &__items {
+        width: 100%;
+    }
+    &__items--hidden {
+        display: none;
+    }
+    &__visible {
+        position: relative;
+        margin: 20px 0 20px 0;
         font-weight: 600;
         font-size: 20px;
         text-align: center;
         color: $second-color;
+        cursor: pointer;
+        &:after {
+            display: block;
+            position: absolute;
+            content: '';
+            width: 12px; 
+            height: 7px;
+            top: 45%; 
+            right: -17px;
+            background: url('../../icons/show_more.svg') center center/cover no-repeat;
+        }
     }
-    .hiddenButtons {
-        flex-direction: column;
-        display: flex;
-        align-items: center;
+    &__visible--active {
+        &:after {
+            transform: rotate(180deg);
+        }
     }
 }
