@@ -4,10 +4,12 @@
 			gap: 70px;
 			padding: 0 25px;
 		}
+
 		&__img-wrapper {
 			&:after {
 				display: none;
 			}
+
 			&:before {
 				display: none;
 			}
@@ -18,25 +20,30 @@
 @media (max-width: 991px) {
 	.promo {
 		position: relative;
-			&__header {
-				font-size: 62px;
-			}
-			&__subheader {
-				margin-top: 15px;
-				font-size: 27px;
-			}
-			&__descr {
-				font-size: 16px;
-			}
-			&__img-wrapper {
-				width: 176px;
-				height: 239px;
-			}
-			&__img {
-				height: 100%;
-				width: 100%;
-				object-fit: contain;
-			}
+
+		&__header {
+			font-size: 62px;
+		}
+
+		&__subheader {
+			margin-top: 15px;
+			font-size: 27px;
+		}
+
+		&__descr {
+			font-size: 16px;
+		}
+
+		&__img-wrapper {
+			width: 176px;
+			height: 239px;
+		}
+
+		&__img {
+			height: 100%;
+			width: 100%;
+			object-fit: contain;
+		}
 	}
 
 	.booklet {
@@ -56,9 +63,10 @@
 			font-size: 28px;
 		}
 	}
-	
+
 	.description {
 		font-size: 18px;
+
 		&__text {
 			font-size: 14px;
 		}
@@ -71,119 +79,155 @@
 
 
 @media (max-width: 767px) {
-	.body {
-		margin: 0 25px 91px 25px;
-		.promo {
-			.container {
-				padding-top: 67px;
-				max-width: 767px;
+	.promo {
+		.container {
+			padding-top: 67px;
+			max-width: 767px;
+		}
+
+		&__header {
+			font-size: 54px;
+		}
+
+		&__subheader {
+			margin-top: 12px;
+			font-size: 20px;
+		}
+
+		&__descr {
+			font-size: 16px;
+		}
+
+		&__img-wrapper {
+			width: 127px;
+			height: 180px;
+		}
+	}
+
+	.title {
+		&__pattern {
+			width: 100%;
+			font-weight: 600;
+			font-size: 24px;
+			margin: 24px 0 12px 0;
+
+			&:after {
+				display: none;
 			}
-			&__header {
-				font-size: 54px;
-			}
-			&__subheader {
-				margin-top: 12px;
-				font-size: 20px;
-			}
-			&__descr {
-				font-size: 16px;
-			}
-			&__img-wrapper {
-				width: 127px;
-				height: 180px;
+
+			&:before {
+				display: none;
 			}
 		}
-	
-		.title {
-			&__pattern {
-				font-weight: 600;
-				font-size: 24px;
-				margin: 24px 0 12px 0;
-				&:after {
-					display: none;
-				}
-				&:before {
-					display: none;
-				}
-			}
-			&__pattern--mobile {
-				position: relative;
-				margin-top: 70px;
-				&:before {
-					display: block;
-					position: absolute;
-					content: '';
-					width: 14px; 
-					height: 54px; 
-					top: -8px;
-					left: 50%;
-					transform: translate(0, -50px);
-					background: url(../../img/pattern_mobile.png) center center/cover no-repeat;
-				}
+
+		&__pattern--mobile {
+			position: relative;
+			margin-top: 70px;
+
+			&:before {
+				display: block;
+				position: absolute;
+				content: '';
+				width: 14px;
+				height: 54px;
+				top: -8px;
+				left: 50%;
+				transform: translate(0, -50px);
+				background: url(../../img/pattern_mobile.png) center center/cover no-repeat;
 			}
 		}
-	
-		.sale {
-			&__visible {
-				margin-top: 12px;
-				font-size: 16px;
-				&:after {
-					width: 9px; 
-					height: 5px;
-					right: -14px;
-				}
-			}
-		}
-	
-		.booklet {
-			.container--small {
-				max-width: 334px;
-				&__img {
-					height: 160px;
-				}
-				&__link {
-					margin-top: 16px;
-				}
-				&__item {
-					margin-top: 4px;
-				}
-				&__title {
-					text-align: left;
-				}
-			}
-		}
-	
-		.communication {
-			.container--small {
-				max-width: 334px;
-				&__title {
-					margin-top: 32px;
-					margin-bottom: 0;  
-				}
-			}
-		}
-	
-		.description {
+	}
+
+	.sale {
+		&__visible {
 			margin-top: 12px;
 			font-size: 16px;
-			font-weight: 400;
-			&__text {
-				font-size: 12px;
+
+			&:after {
+				width: 9px;
+				height: 5px;
+				right: -14px;
 			}
 		}
-		
-	
-		.button {
-			border-radius: 30px;
-			padding: 8px 24px;
-			height: 43px;
-			font-size: 20px;
-			&__link {
-				img {
-					margin-right: 10px;
-					width: 20px;
-					height: 20px;
-				}
+
+		&__items__pattern-mobile {
+			&:after {
+				content: '';
+				display: block;
+				position: relative;
+				background: url(../../img/pattern_mobile.png) center center/cover no-repeat;
+				top: 8px;
+				left: 50%;
+				width: 14px;
+				height: 54px;
+			}
+		}
+
+		&__items--hidden {
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	.booklet {
+		.container--small {
+			max-width: 334px;
+		}
+
+		&__img {
+			height: 160px;
+		}
+
+		&__link {
+			margin-top: 16px;
+		}
+
+		&__item {
+			margin-top: 4px;
+		}
+
+		&__title {
+			width: 100%;
+			text-align: left;
+		}
+	}
+
+	.communication {
+		.container--small {
+			max-width: 334px;
+		}
+
+		&__title {
+			width: 100%;
+			text-align: left;
+			margin-top: 32px;
+			margin-bottom: 0;
+		}
+	}
+
+	.description {
+		margin-top: 12px;
+		font-size: 16px;
+		font-weight: 400;
+
+		&__text {
+			font-size: 12px;
+		}
+	}
+
+
+	.button {
+		border-radius: 30px;
+		padding: 8px 24px;
+		height: 43px;
+		font-size: 20px;
+
+		&__link {
+			img {
+				margin-right: 10px;
+				width: 20px;
+				height: 20px;
 			}
 		}
 	}
@@ -191,12 +235,38 @@
 
 
 @media (max-width: 535px) {
+	body {
+		padding: 0 25px 0 25px;
+	}
+
 	.promo {
-		.container {
-			max-width: 535px;
-		}
 		&__img-wrapper {
 			position: absolute;
+			right: 12px;
+			z-index: -1;
+		}
+
+		&__wrapper {
+			padding: 0;
+		}
+	}
+
+	.container--small {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.booklet {
+		.container--small {
+			max-width: 100%;
+			width: 100%;
+		}
+	}
+
+	.communication {
+		.container--small {
+			max-width: 100%;
+			width: 100%;
 		}
 	}
 }
