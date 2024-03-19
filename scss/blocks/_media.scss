@@ -18,8 +18,6 @@
 @media (max-width: 991px) {
 	.promo {
 		position: relative;
-		.container {
-			max-width: 991px;
 			&__header {
 				font-size: 62px;
 			}
@@ -30,21 +28,15 @@
 			&__descr {
 				font-size: 16px;
 			}
-			&__wrapper {
-				gap: 35px;
-			}
 			&__img-wrapper {
-				position: relative;
 				width: 176px;
 				height: 239px;
-				z-index: -1; 
 			}
 			&__img {
-				width: 100%;
 				height: 100%;
+				width: 100%;
 				object-fit: contain;
-			}		
-		}   
+			}
 	}
 
 	.booklet {
@@ -77,9 +69,10 @@
 	}
 }
 
+
 @media (max-width: 767px) {
-	body {
-		margin-bottom: 91px;
+	.body {
+		margin: 0 25px 91px 25px;
 		.promo {
 			.container {
 				padding-top: 67px;
@@ -98,14 +91,15 @@
 			&__img-wrapper {
 				width: 127px;
 				height: 180px;
+			}
 			&__img {
-				width: 100%;
 				height: 100%;
+				width: 100%;
 				object-fit: contain;
 			}
-			}
-		}
 
+		}
+	
 		.title {
 			&__pattern {
 				font-weight: 600;
@@ -157,14 +151,14 @@
 					margin-top: 16px;
 				}
 				&__item {
-				   margin-top: 4px;
+					margin-top: 4px;
 				}
 				&__title {
 					text-align: left;
 				}
 			}
 		}
-
+	
 		.communication {
 			.container--small {
 				max-width: 334px;
@@ -183,7 +177,7 @@
 				font-size: 12px;
 			}
 		}
-	   
+		
 	
 		.button {
 			border-radius: 30px;
@@ -201,12 +195,11 @@
 	}
 }
 
+
 @media (max-width: 480px) {
-	body {
-		.promo {
-			.container {
-				max-width: 480px;
-			}
+	.promo {
+		.container {
+			max-width: 480px;
 		}
 	}
 }
