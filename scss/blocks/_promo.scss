@@ -2,8 +2,8 @@
     position: relative;
     &__wrapper {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        gap: 150px;
     }
     &__header {
         font-weight: 800;
@@ -31,8 +31,8 @@
         position: relative;
         margin-right: 125px;
         border-radius: 27px;
-        max-width: 210px;
-        max-width: 299px;
+        width: 210px;
+        height: 299px;
         rotate: -18deg;
         &:before {
             display: block;

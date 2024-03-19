@@ -1,23 +1,5 @@
 .title {
 	position: relative;
-    &__pattern {
-        margin: 45px 0 36px 0;
-        font-weight: 700;
-        font-size: 36px;
-        color: $main-color;
-        &:before {
-            display: block;
-            position: absolute;
-            content: "";
-            width: 73px;
-            height: 19px;
-            background: url(../../img/pattern.png) center center / cover no-repeat;
-            left: -18px;
-            -webkit-transform: translate(-100%, 80%);
-            transform: translate(-100%, -50%);
-            top: 50%;
-        }
-	}
 	&__pattern {
 		margin: 45px 0 36px 0;
 		line-height: 105%;
