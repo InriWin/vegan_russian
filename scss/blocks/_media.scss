@@ -190,10 +190,13 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 535px) {
 	.promo {
 		.container {
-			max-width: 480px;
+			max-width: 535px;
+		}
+		&__img-wrapper {
+			position: absolute;
 		}
 	}
 }
